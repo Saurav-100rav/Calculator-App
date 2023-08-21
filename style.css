@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: rgb(179, 232, 210);
+}
+.container{
+    border: 3px solid black;
+    width : 25%; 
+    height : 64vh;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column; 
+    background-color: rgb(40, 43, 42);
+    border-radius: 11px;
+    text-align: center;
+}
+
+#id1{
+    /* border: 1px solid red; */
+    width: 100%;
+    height:20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#id1 input{
+    width: 90%;
+    height: 70%;
+    padding: 0.2rem 0.3rem;
+    color: black;
+    border-radius: 11px;
+    font-size: 1.2rem;
+    border :0.5px solid rgb(59, 54, 54);
+}
+#id2,#id3,#id4,#id5,#id6{
+    /* border: 1px solid rgb(93, 81, 227); */
+    width: 100%;
+    height:16%
+}
+
+.outer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.second{
+    border: 1px solid rgb(179, 82, 224);
+    width: 16%;
+    height:60%;
+    text-align: center;
+    /* padding: 7px; */
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    background-color: rgb(59, 54, 54);
+    cursor: pointer;
+}
+
+#id6 #calculate{
+    width:40%;
+}
+ #ac{
+    width:40%;
+}
+#ac#decimal,#divison,#multiply,#minus,#plus,#calculate{
+    color: rgb(22, 230, 112);
+}
+
+@media(900px<width<1200px){
+    .container{
+        width:30%;
+    }
+}
+@media(700px<width<900px){
+    .container{
+        width:50%;
+    }
+}
+@media(500px<width<700px){
+    .container{
+        width:60%;
+    }
+}
+@media(380px<width<500px){
+    .container{
+        width:70%;
+    }
+}
+@media(230px<width<380px){
+    .container{
+        width:85%;
+    }
+}
+@media(width<230px){
+    .container{
+        width:98%;
+    }
+}
